@@ -1559,12 +1559,31 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-auto {
+  will-change: auto;
+}
+
 .inter-custom {
   font-family: 'Inter', serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight, 400);
   /* You can customize this variable */
   font-style: normal;
+}
+
+:root{
+  --x: -99%;
+}
+
+/* global.css or styles.css */
+
+.my-element {
+  -webkit-mask-image: linear-gradient(-75deg, hsl(var(--primary)) calc(var(--x) + 20%), transparent calc(var(--x) + 30%), hsl(var(--primary)) calc(var(--x) + 100%));
+          mask-image: linear-gradient(-75deg, hsl(var(--primary)) calc(var(--x) + 20%), transparent calc(var(--x) + 30%), hsl(var(--primary)) calc(var(--x) + 100%));
 }
 
 .dark {

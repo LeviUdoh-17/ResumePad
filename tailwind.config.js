@@ -22,6 +22,7 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'serif'],
       },
+      maskImage: { 'gradient-mask': 'linear-gradient(-75deg, hsl(var(--primary)) calc(var(--x) + 20%), transparent calc(var(--x) + 30%), hsl(var(--primary)) calc(var(--x) + 100%))', },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',

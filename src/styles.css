@@ -12,6 +12,13 @@
     .greycliff-custom{
         font-family: 'graycliff';
     }
+    :root{
+        --x: -99%;
+    }
+    /* global.css or styles.css */
+    .my-element {
+        mask-image: linear-gradient(-75deg, hsl(var(--primary)) calc(var(--x) + 20%), transparent calc(var(--x) + 30%), hsl(var(--primary)) calc(var(--x) + 100%));
+    }
 
     .dark { 
         --background: #030711; 
